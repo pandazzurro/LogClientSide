@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogClientSide.FullFramework.JSNlog", "LogClientSide.FullFramework.JSNlog\LogClientSide.FullFramework.JSNlog.csproj", "{0D87845B-7286-4AED-9328-79F0A917BB1F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LogClientSide.Core.JSNlog", "LogClientSide.Core.JSNlog\LogClientSide.Core.JSNlog.xproj", "{1AEDD7DF-3771-46E2-8D39-48DFC8F10C12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D87845B-7286-4AED-9328-79F0A917BB1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D87845B-7286-4AED-9328-79F0A917BB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D87845B-7286-4AED-9328-79F0A917BB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D87845B-7286-4AED-9328-79F0A917BB1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEDD7DF-3771-46E2-8D39-48DFC8F10C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEDD7DF-3771-46E2-8D39-48DFC8F10C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEDD7DF-3771-46E2-8D39-48DFC8F10C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEDD7DF-3771-46E2-8D39-48DFC8F10C12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
