@@ -1,13 +1,10 @@
-<md-sidenav-container>
-  <md-sidenav #sidenav mode="over">
+<md-toolbar color="primary">
     <md-menu #appMenu="mdMenu">
-        <button md-menu-item routerLink="/application-insight" routerLinkActive="active">Application Insight</button>
-        <button md-menu-item routerLink="/jsnlog" routerLinkActive="active">JSNLog</button>
+        <button md-menu-item routerLink="/application-insight" routerLinkActive="active"><md-icon>trending_up</md-icon> Application Insight</button>
+        <button md-menu-item routerLink="/jsnlog" routerLinkActive="active"><md-icon>line_style</md-icon> JSNLog</button>
     </md-menu>
-  </md-sidenav>
-
-    <button md-icon-button [mdMenuTriggerFor]="appMenu" (click)="sidenav.open()">
+    <button md-icon-button [mdMenuTriggerFor]="appMenu">
         <md-icon>more_vert</md-icon>
     </button>
-    <router-outlet></router-outlet>
-</md-sidenav-container>
+</md-toolbar>
+<router-outlet></router-outlet>

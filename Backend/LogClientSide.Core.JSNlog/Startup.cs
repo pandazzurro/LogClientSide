@@ -48,10 +48,10 @@ namespace LogClientSide.WebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IApplicationLifetime applicationLifetime)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            loggerFactory.AddDebug();
+            // Disabilito il livelli di log di default dell'infrastruttura
+            loggerFactory = new LoggerFactory();
             // Serilog
-            loggerFactory.AddSerilog();
+            loggerFactory.AddSerilog(Log.Logger, false);
             applicationLifetime.ApplicationStopped.Register(Log.CloseAndFlush);
             // Configure JSNLog
             JsnlogConfiguration jsnlogConfiguration = new JsnlogConfiguration
