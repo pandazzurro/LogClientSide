@@ -1,31 +1,27 @@
 # LogClientSide
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+Il progetto è formato da 3 applicativi:
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ - *Frontend* - Angular2
+ - *Backend* - Asp net core
+ - *Backend* - Asp net 4.x
 
-## Code scaffolding
+**Angular2**
+--------
+Il progetto è stato generato con [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+Per lanciare angular in development mode è necessario eseguire `ng serve` , questa istruzione avvia un server web che viene ospitato sull'url `http://localhost:4200/`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+***JSNLog***
+E' stato creato il servizio jslogger.service.ts con contiene la logica di scrittura del log
 
-## Build
+***Application Insight***
+E' stato installato il pacchetto via **npm** ed utilizzato nel componente di application-insight. 
+Non è stato installato nulla sui componenti di backend.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+**Asp Net Core**
+--------
+Il progetto viene ospitato su IIS express sull' url `http://localhost:17094/`. Sono stati aggiunti dei pacchetti per la gestione di JSNLog e Serilog. L'unico file editato è Startup.cs
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**Asp Net 4.x**
+--------
+Il progetto viene ospitato su IIS express sull' url `http://localhost:34178/`. Sono stati aggiunti dei pacchetti per la gestione di JSNLog, JSNLog per Serilog  e Serilog. L'unico file editato è Startup.cs
